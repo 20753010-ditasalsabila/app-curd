@@ -1,0 +1,35 @@
+<div class="grid grid-cols-2">
+    <div class="text-left">
+      <h1 class="text-[32px]">Todo List</h1>
+    </div>
+    <div class="text-right">
+      <a class="border border-blue-600 px-4 py-1 text-white bg-blue-600 rounded-[8px] mb-2" [routerLink]="['/add']">Add</a>
+    </div>
+  </div>
+  
+  <!-- <table class="table-auto border w-full">
+    <thead>
+      <tr>
+        <th class="border">No</th>
+        <th class="border">Title</th>
+        <th class="border">Description</th>
+        <th class="border">Status</th>
+        <th class="border">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (item of todos; track $index) {
+      <tr>
+        <td class="border">{{$index + 1}}</td>
+        <td class="border">{{item.title}}</td>
+        <td class="border">{{item.description}}</td>
+        <td class="border">{{item.status}}</td>
+        <td class="border">
+          <a class="border border-yellow-600 px-4 py-1 text-white bg-yellow-600 rounded-[8px] mx-3" [routerLink]="['/edit', item.todoId]">Edit</a>
+          <a class="border border-red-600 px-4 py-1 text-white bg-red-600 rounded-[8px]" (click)="onDelete(item.todoId)">Delete</a>
+        </td>
+      </tr>
+      }
+    </tbody>
+  </table> -->
+  
